@@ -28,4 +28,6 @@ const handler = (req, res) => {
 
 const server = http.createServer(handler);
 
-console.log('Server running on http://localhost:8080');
+server.listen({ port: 8080 }, () => {
+  console.log('Server running on http://localhost:8080');
+});
