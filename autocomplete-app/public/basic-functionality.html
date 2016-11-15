@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Autocomplete app</title>
+    </head>
+    <body>
+        <h1>Autocomplete app!</h1>
+        <div class="form-wrapper">
+            <form class="get-word" action="index.html" method="post">
+                <input id="autocomplete-field" list="suggestions" type="text" name="name" value="" autocomplete="off">
+                <datalist id="suggestions">
+                </datalist>
+            </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- <button id="submit">Get data</button> -->
+        </div>
+        <div class="words-data">
+          <p id="word">Random text</p>
+        </div>
+      <script src="/public/script.js"></script>
+    </body>
+</html>

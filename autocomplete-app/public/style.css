@@ -1,0 +1,67 @@
+*{
+
+  font-family: 'Open Sans', sans-serif;
+}
+*:focus{
+  outline: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #DDCECD;
+
+}
+#center-me{
+  width: 400px;
+  margin: 0 auto;
+}
+#origami{
+  height: 550px;
+  width: 100%;
+  background-color: #EEE5E5;
+}
+.fold{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  height: 55px;
+  width: 100%;
+  color: #674D53;
+  cursor: pointer;
+}
+#sticky-fold{
+  width: 100%;
+  background-color: #EEE5E5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  height: 100px;
+
+}
+#button-box{
+  width: 100%;
+  height: 100px;
+}
+#button-fold{
+  display: block;
+  border-style: none;
+  background-color: #EEE5E5;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: #674D53;
+  margin: 0 auto;
+}
+
+#data-input{
+  padding-top: 45px;
+  border-style: none;
+  border-bottom: 1px dotted #674D53;
+  background-color: transparent;
+  color: #674D53;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
