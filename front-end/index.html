@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <body>
+    <form id="form">
+      <label>Number to square: </label><input id="input">
+      <button id="submit">calculate</button>
+    </form>
+    <div class="div"></div>
+    <script>
+      function square (input) {
+        input * input;
+      }
+
+      function handleSubmit (e) {
+        e.preventDefault();
+
+        var numberToSquare = document.getElementById('input').value;
+
+        var answer = square(numberToSquare);
+
+        document.getElementsByClassName('div').innerHTML = answer;
+      }
+
+      document.getElementById('form').addEventListener('submit', handleSubmit);
+    </script>
+  </body>
+<html>
