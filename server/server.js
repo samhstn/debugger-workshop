@@ -8,11 +8,11 @@ const generateHTML = (status, message) =>
 
 const handler = (req, res) => {
   const url = req.url;
-  if (url.includes('/name=') {
+  if (url.includes('/name=')) {
     fs.readFile(path.join(__dirname, 'index.html'), (err, data) => {
       if (err) {
         res.writeHead(500, { 'content-type': 'text/html' });
-        return res.end(generateHTML(500, 'Server Error');
+        return res.end(generateHTML(500, 'Server Error'));
       }
       const name = qs.parse(url).name;
       const finalData = data.replace('$NAME', name);
@@ -22,8 +22,10 @@ const handler = (req, res) => {
     });
   } else {
     res.writeHead(404, { 'content-type': 'text/html' });
-    res.end(generateHTML(404, Not Found));
+    res.end(generateHTML(404, 'Not Found'));
   }
 };
 
 const server = http.createServer(handler);
+
+console.log('Server running on http://localhost:8080');
